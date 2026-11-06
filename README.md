@@ -6,7 +6,7 @@ Hundreds of Geist Serif letters float in 3D space. From one exact point of view,
 
 ![Letters forming the rabbit](preview.png)
 
-Demo video: [demo.mp4](demo.mp4)
+Video: [geist-serif-anamorphosis-4k-hdr.mp4](geist-serif-anamorphosis-4k-hdr.mp4) — rendered from this code, 3840×2160, 60 fps, 12 s seamless loop, HDR (HEVC 10-bit, HLG / BT.2020). Best on an HDR screen (MacBook Pro, iPhone, recent TVs).
 
 ## Controls
 
@@ -17,6 +17,12 @@ Demo video: [demo.mp4](demo.mp4)
 | Back to the rabbit | Double-click, Space or Enter | Double-tap |
 
 If you leave it alone, the camera wanders into the cloud and back to the rabbit by itself.
+
+## HDR
+
+On an HDR screen in Chrome, the page renders with WebGPU in extended range: the letters glow brighter than paper white, and get brighter still when the rabbit locks in. On other screens or browsers it falls back to WebGL in normal range. Add `?hdr` to the URL to force the WebGPU path.
+
+The video is exported from the same file: `index.html?render` renders each 4K frame in float and encodes it as HLG.
 
 ## How it works
 
